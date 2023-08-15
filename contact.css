@@ -1,0 +1,74 @@
+
+* {box-sizing: border-box;}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color:#eee5e5;
+}
+
+h3 {
+  color:black;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+.container-fluid1 {
+  margin: auto;
+  width:450px;
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: #242526;
+  padding: 20px;
+  color:white;
+  font-size:16px;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+    }
+
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+input[type=text1], select, textarea {
+  width: 100%;
+  padding: 12px;
+  /* border: 1px solid black; */
+  border-radius: 8px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  background-color: white;
+  resize: vertical;
+  color:#3b3e3f;
+  font-size: 14px;
+  outline: none;
+}
+
+input[type=submit] {
+ width: 100%;
+ background-color:black;
+  color: #696b6c;
+  padding: 12px 20px;
+  border: 1px solid lack;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+input[type=submit]:hover {
+ background-color:#303233; 
+ color:black;
+}
+
+@media screen and (max-width: 600px) {
+.container{font-size: 17px; width:100%}
+input[type="submit"]{font-size:14px;}
+}
