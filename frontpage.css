@@ -1,0 +1,17 @@
+#shopbutt{
+    border: 2px  rgb(154, 95, 70) solid;
+    border-radius: 20px;
+    margin-top: 8%; 
+    margin-left: 35%;
+    width: 25%;
+    padding: 5px;
+    background-color: rgb(154, 95, 70);
+    font-size: small;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+}
+.group{
+    justify-content: center;
+    align-items: center;
+}
