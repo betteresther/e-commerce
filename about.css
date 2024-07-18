@@ -3,6 +3,11 @@ color: black;
 cursor: pointer;
 }
 
+body{
+    background: whitesmoke;
+    width: 100%;
+}
+
 #services:hover{
     background-color: rgb(80, 78, 78);
     color: white;
@@ -20,8 +25,55 @@ cursor: pointer;
     color: white;
 }
 .heading{
-    margin-left:60px;
+    margin-left:-70px;
 }
 
-#brown{
-    background-image: url(./img/BACKGROUND\ 8.jpg)}
+/* #brown{
+    background-image: url(./img/BACKGROUND\ 8.jpg)} */
+
+    .container-fluid-one {
+        margin: auto;
+        width:450px;
+        border: 1px solid white;
+        border-radius: 7px;
+        padding: 20px;
+        color:white;
+        font-size:16px;
+        animation: myAnimation 2s ease 0s 1 normal forwards;
+          }
+      
+      @keyframes myAnimation {
+          0% {
+              opacity: 0;
+              transform: translateX(-250px);
+          }
+      
+          100% {
+              opacity: 1;
+              transform: translateX(0);
+          }
+      }
+
+      #container-fluid-two{
+        margin: auto;
+        width:450px;
+        border: 1px solid white;
+        border-radius: 7px;
+        padding: 20px;
+        color:white;
+        font-size:16px;
+        animation: myAnime 2s ease 0s 1 normal forwards;
+          }
+      
+      @keyframes myAnime {
+          0% {
+              opacity: 0;
+              transform: translateX(250px);
+          }
+      
+          100% {
+              opacity: 1;
+              transform: translateX(0);
+          }
+      }
+      

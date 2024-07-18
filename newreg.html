@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firestore Example</title>
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Include Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore.js"></script>
+
+</head>
+<body>
+    <h1>Add Data to Firestore</h1>
+    <input type="text" id="nameInput" placeholder="Name">
+    <input type="text" id="ageInput" placeholder="Age">
+    <button id="submitBtn">Submit</button>
+    
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD3AH8b6DGnxZwu9jh0Q8f_6EtrJP_HvY4",
+            authDomain: "dressitup-961b6.firebaseapp.com",
+            projectId: "dressitup-961b6",
+            storageBucket: "dressitup-961b6.appspot.com",
+            messagingSenderId: "905043102927",
+            appId: "1:905043102927:web:823fac770c04df10fefbba"
+        };
+        
+        // Initialize Firebase
+        // Initialize Firebase
+        try {
+            firebase.initializeApp(firebaseConfig);
+            console.log("Firebase initialized successfully.");
+        } catch (error) {
+            console.error("Error initializing Firebase:", error);
+        }
+        $(document).ready(function() {
+            $('#submitBtn').click(function() {
+                var name = $('#nameInput').val();
+                var age = $('#ageInput').val();
+                
+                // Add a new document to the "users" collection
+                firebase.firestore().collection("users").add({
+                    name: name,
+                    age: age
+                })
+                .then(function(docRef) {
+                    console.log("Document written with ID: ", docRef.id);
+                    // Clear input fields after successful submission
+                    $('#nameInput').val('');
+                    $('#ageInput').val('');
+                })
+                .catch(function(error) {
+                    console.error("Error adding document: ", error);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

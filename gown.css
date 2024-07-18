@@ -1,3 +1,12 @@
 /* .container-fluid{
     background-image: url(./img/BACKGROUND\ 8.jpg);
 } */
+#addtocart{
+    width: 80%;
+    margin-left: 50px;
+}
+
+#paynow{
+    width: 80%;
+    margin-left: 50px;
+}
