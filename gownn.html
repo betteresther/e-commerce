@@ -10,13 +10,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="gown.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="image/x-icon" href="./img/Dress it up.jpg">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <!-- <script src='https://kit.fontawesome.com/a076d05399.js'crossorigin='anonymous'></script> -->
 </head>
 <body>
-    <div class="all">
+<div class="all">
     <nav class="navbar navbar-expand-md" id="dark">
 
         <a class="nav-link" id="insta" href="https://instagram.com/dress_it_up______?igshid=MzRlODBiNWFlZA=="><i class="fa fa-instagram"></i></a>
@@ -66,14 +67,12 @@
               <button class="btn btn-outline-warning" type="submit">Search</button> -->
               
                 <a class="nav-link" id="search" href="register.html"><i class="fa fa-user"></i></a>
-                <a class="nav-link" id="Bag" href="#"><i class="fa fa-shopping-bag"></i></a>
+                <a class="nav-link" id="shopping_bag" href="#"><i class="fa fa-shopping-bag"><span>0</span></i></a>
            
             </form>
           </div>
         </div>
       </nav>
-      </div>
-
 
       <!-- Open Content -->
       <div class="container-fluid">
@@ -81,47 +80,68 @@
           <div class="col-md-4">
               <div class="card mb-4 product-wap rounded-0">
                   <div class="card rounded-0">
-                      <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
+                      <img class="card-img rounded-0 img-fluid" src="./img/gown.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                         <li>Avaliable Color :</li>
                         <li><p class="text-muted"><strong>White / Black</strong></p></li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
+
+                        <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
                         <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -135,8 +155,8 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 1.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">GOWN</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">GOWN</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                         <li>Avaliable Color :</li>
                         <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -146,40 +166,61 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
+
+                        <div class="row">
+                            <div class="col-10">
+                              <select class="form-select" aria-label="Default select example" id="Color">
+                                <option  value="white"selected>Select Color:</option>
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                                <option value="yellow">Yellow</option>
+                                <option value="black">Black</option>
+                                <option value="white">White</option>
+                                <option value="pink">Pink</option>
+                                <option value="grey">Grey</option>
+                              </select>
+                              </div>
+ 
+                              <div class="col-2">
+                              <span id="colorB" class="color-b"></span>
+                              </div>
+                              </div>
+
                         <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -193,51 +234,62 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 2.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                        <li>Avaliable Color :</li>
-                        <li><p class="text-muted"><strong>White / Black</strong></p></li>
-                          <li class="pt-2">
-                              <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
-                              <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
-                              <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
-                              <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
-                              <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
-                          </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
+
+                        <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
                         <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -251,109 +303,131 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 3.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black"> DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                        <li>Avaliable Color :</li>
-                        <li><p class="text-muted"><strong>White / Black</strong></p></li>
-                          <li class="pt-2">
-                              <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
-                              <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
-                              <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
-                              <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
-                              <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
-                          </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      <a href="#" class="h3 text-decoration-none text-black"> DRESS</a>
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
+
+                         <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
                         <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
                   </div>
               </div>
           </div>
+
           <div class="col-md-4">
               <div class="card mb-4 product-wap rounded-0">
                   <div class="card rounded-0">
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 4.jpg">
                   </div>
-
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">GOWN</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
-                          <li>Avaliable Color :</li>
-                          <li><p class="text-muted"><strong>White / Black</strong></p></li>
-                          <li class="pt-2">
-                              <span class="product-color-dot color-dot-red float-left rounded-circle ml-1"></span>
-                              <span class="product-color-dot color-dot-blue float-left rounded-circle ml-1"></span>
-                              <span class="product-color-dot color-dot-black float-left rounded-circle ml-1"></span>
-                              <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
-                              <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
-                          </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      <a href="#" class="h3 text-decoration-none text-black">GOWN</a>
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
+
+                          <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
                         <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -367,8 +441,8 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                           <li>Avaliable Color :</li>
                           <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -378,40 +452,62 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col pb-3">
+
+                        <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
+                        <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -425,8 +521,8 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                           <li>Avaliable Color :</li>
                           <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -436,40 +532,62 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col pb-3">
+
+                         <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
+                        <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -483,8 +601,8 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                           <li>Avaliable Color :</li>
                           <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -494,40 +612,62 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col pb-3">
+
+                         <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
+                        <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -541,8 +681,8 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                           <li>Avaliable Color :</li>
                           <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -552,40 +692,62 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col pb-3">
+
+                          <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
+                        <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -599,8 +761,8 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                           <li>Avaliable Color :</li>
                           <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -610,40 +772,62 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col pb-3">
+
+                          <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
+                        <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -657,8 +841,8 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                           <li>Avaliable Color :</li>
                           <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -668,40 +852,62 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col pb-3">
+
+                         <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
+                        <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -715,8 +921,8 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                           <li>Avaliable Color :</li>
                           <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -726,54 +932,78 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col pb-3">
+
+                         <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
+                        <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
                   </div>
               </div>
           </div>
+
+
           <div class="col-md-4">
               <div class="card mb-4 product-wap rounded-0">
                   <div class="card rounded-0">
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                           <li>Avaliable Color :</li>
                           <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -783,40 +1013,62 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col pb-3">
+
+                          <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
+                        <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -830,8 +1082,8 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                           <li>Avaliable Color :</li>
                           <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -841,40 +1093,62 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col pb-3">
+
+                          <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
+                        <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -888,8 +1162,8 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                           <li>Avaliable Color :</li>
                           <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -899,40 +1173,62 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col pb-3">
+
+                          <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
+                        <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -946,8 +1242,8 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                           <li>Avaliable Color :</li>
                           <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -957,40 +1253,62 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col pb-3">
+
+                         <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
+                        <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -1004,8 +1322,8 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                           <li>Avaliable Color :</li>
                           <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -1015,40 +1333,62 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col pb-3">
+
+                          <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
+                        <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -1062,8 +1402,8 @@
                       <img class="card-img rounded-0 img-fluid" src="./img/gown 5.jpg">
                   </div>
                   <div class="card-body">
-                      <a href="shop-single.html" class="h3 text-decoration-none text-black">DRESS</a>
-                      <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
+                      <a href="#" class="h3 text-decoration-none text-black">DRESS</a>
+                      <!-- <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                           <li>Avaliable Color :</li>
                           <li><p class="text-muted"><strong>White / Black</strong></p></li>
                           <li class="pt-2">
@@ -1073,40 +1413,62 @@
                               <span class="product-color-dot color-dot-light float-left rounded-circle ml-1"></span>
                               <span class="product-color-dot color-dot-green float-left rounded-circle ml-1"></span>
                           </li>
-                      </ul>
-                      <p class="text-left mb-3"><strong>#30,000.00</strong></p>
+                      </ul> -->
+                      <p class="text-left mb-2"><strong><i class='fa-solid fa-naira-sign' style='font-size:14px'></i>30,000</strong></p>
                       <form action="" method="GET">
                         <input type="hidden" name="product-title" value="Activewear">
+
                         <div class="row">
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item">Size :
+                                <ul class="list-inline" style="font-size: 12px;">
+                                    <li class="list-inline-item" >Size :
                                         <input type="hidden" name="product-size" id="product-size" value="S">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">S</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">M</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">L</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark btn-size">XL</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">S</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">M</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">L</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-size btn-sm">XL</span></li>
                                 </ul>
                             </div>
                             <div class="col-auto">
-                                <ul class="list-inline pb-3">
-                                    <li class="list-inline-item text-right">
+                                <ul class="list-inline ">
+                                    <li class="list-inline-item text-right" style="font-size: 12px;">
                                         Quantity
                                         <input type="hidden" name="product-quanity" id="product-quanity" value="1">
                                     </li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-minus">-</span></li>
-                                    <li class="list-inline-item"><span class="badge bg-secondary" id="var-value">1</span></li>
-                                    <li class="list-inline-item"><span class="btn btn-dark" id="btn-plus">+</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-minus">-</span></li>
+                                    <li class="list-inline-item"><span class="badge bg-secondary btn-sm" id="var-value">1</span></li>
+                                    <li class="list-inline-item"><span class="btn btn-dark btn-sm" id="btn-plus">+</span></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col pb-3">
+
+                          <div class="row">
+                        <div class="col-10">
+                          <select class="form-select" aria-label="Default select example" id="selectColor">
+                            <option  value="white"selected>Select Color:</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                            <option value="pink">Pink</option>
+                            <option value="grey">Grey</option>
+                          </select>
+                          </div>
+                          
+                          <div class="col-2">
+                          <span id="colorBox" class="color-box"></span>
+                          </div>
+                          </div>
+
+                        <div class="row pb-3">
                             <div class="row">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="paynow">Pay now</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="paynow" id="paynow">Pay now</button>
                             </div>
                             <div class="row mt-2">
-                                <button type="submit" class="btn btn-dark btn-md" name="submit" value="addtocart">Add To Cart</button>
+                                <button type="submit" class="btn btn-dark btn-sm" name="submit" value="addtocart" id="addtocart">Add To Cart</button>
                             </div>
                         </div>
                     </form>
@@ -1114,6 +1476,7 @@
               </div>
           </div>
 
+          <!-----pagination for gowns-->
           <div class="row">
             <ul class="pagination pagination-lg justify-content-end">
                 <li class="page-item">
@@ -1127,68 +1490,69 @@
                 </li>
             </ul>
         </div>
+
+        <hr>
           
-          <footer class="bg-black mt-5">
+        <footer class="footer_all">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row mt-5">
                     <div class="col-md-4 pt-5">
-                        <h2 class="h2 text-white border-bottom pb-3 border-light logo">Dress It Up</h2>
-                        <ul class="list-unstyled text-light footer-link-list">
+                        <h2 class="h2 text-dark border-bottom pb-3 border-light logo">Dress It Up</h2>
+                        <ul class="list-unstyled text-dark footer-link-list">
                             <li>
                                 <i class="fas fa-map-marker-alt fa-fw"></i>
                                 Ikeja, Lagos.
                             </li>
                             <li>
                                 <i class="fa fa-phone fa-fw"></i>
-                                <a class="text-decoration-none text-white" href="tel:010-020-0340">08100000000</a>
+                                <a class="text-decoration-none text-dark" href="tel:010-020-0340">08100000000</a>
                             </li>
                             <li>
                                 <i class="fa fa-envelope fa-fw"></i>
-                                <a class="text-decoration-none text-white" href="mailto:info@company.com">hamzathalimah@gmail.com</a>
+                                <a class="text-decoration-none text-dark" href="mailto:info@company.com">hamzathalimah@gmail.com</a>
                             </li>
                         </ul>
                     </div>
       
                     <div class="col-md-4 pt-5">
-                        <h2 class="h2 text-white border-bottom pb-3 border-light">Products</h2>
-                        <ul class="list-unstyled text-white footer-link-list">
-                            <li><a class="text-decoration-none text-white" href="gown.html">Gowns</a></li>
-                            <li><a class="text-decoration-none text-white" href="twopiece.html">Two Piece</a></li>
-                            <li><a class="text-decoration-none text-white" href="shoes.html">Bags & Shoes</a></li>
-                            <li><a class="text-decoration-none text-white" href="beanies.html">Beanies</a></li>
+                        <h2 class="h2 text-dark border-bottom pb-3 border-light">Products</h2>
+                        <ul class="list-unstyled text-dark footer-link-list">
+                            <li><a class="text-decoration-none text-dark" href="gown.html">Gowns</a></li>
+                            <li><a class="text-decoration-none text-dark" href="twopiece.html">Two Piece</a></li>
+                            <li><a class="text-decoration-none text-dark" href="shoes.html">Bags & Shoes</a></li>
+                            <li><a class="text-decoration-none text-dark" href="beanies.html">Beanies</a></li>
                         </ul>
                     </div>
       
                     <div class="col-md-4 pt-5">
-                        <h2 class="h2 text-white border-bottom pb-3 border-light">Further Info</h2>
-                        <ul class="list-unstyled text-white footer-link-list">
-                            <li><a class="text-decoration-none text-white" href="home.html">Home</a></li>
-                            <li><a class="text-decoration-none text-white" href="about.html">About Us</a></li>
-                            <li><a class="text-decoration-none text-white" href="privacy.html">Privacy Ploicy</a></li>
+                        <h2 class="h2 text-dark border-bottom pb-3 border-light">Further Info</h2>
+                        <ul class="list-unstyled text-dark footer-link-list">
+                            <li><a class="text-decoration-none text-dark" href="home.html">Home</a></li>
+                            <li><a class="text-decoration-none text-dark" href="about.html">About Us</a></li>
+                            <li><a class="text-decoration-none text-dark" href="privacy.html">Privay Policy</a></li>
                             <!-- <li><a class="text-decoration-none text-white" href="#">FAQs</a></li> -->
-                            <li><a class="text-decoration-none text-white" href="#">Contact</a></li>
+                            <li><a class="text-decoration-none text-dark" href="contact.html">Contact Us</a></li>
                         </ul>
                     </div>
-                </div>
       
-                <div class="row text-white mb-4">
+                <!-- <div class="row text-white mb-4">
                     <div class="col-12 mb-3">
                         <div class="w-100 my-3 border-top border-light"></div>
-                    </div>
+                    </div> -->
                     <div class="col-auto me-auto">
                         <ul class="list-inline footer-icons" id="icons_f">
                           <li class="list-inline-item text-center">
-                            <a class="text-light text-decoration-none" target="_blank" href="https://instagram.com/dress_it_up______?igshid=MzRlODBiNWFlZA==" id="instagram">
+                            <a class="text-dark text-decoration-none" target="_blank" href="https://instagram.com/dress_it_up______?igshid=MzRlODBiNWFlZA==" id="instagram">
                               <i class="fa fa-instagram"></i></a>
                     </li>
               
                     <li class="list-inline-item text-center">
-                      <a class="text-light text-decoration-none" target="_blank" href="https://story.snapchat.com/u/leemahisurbaby?share_id=RtJG1hBtS7OuIcRoIE2L+g&locale=en_US" id="snapchat">
+                      <a class="text-dark text-decoration-none" target="_blank" href="https://story.snapchat.com/u/leemahisurbaby?share_id=RtJG1hBtS7OuIcRoIE2L+g&locale=en_US" id="snapchat">
                         <i class="fa fa-snapchat"></i></a>
                     </li>
-              
+      
                     <li class="list-inline-item text-center">
-                      <a class="text-light text-decoration-none" target="_blank" href="#" id="whatsappng">
+                      <a class="text-dark text-decoration-none" target="_blank" href="#" id="whatsappng">
                         <i class="fa fa-whatsapp"></i></a>
                     </li>
                         </ul>
@@ -1202,12 +1566,23 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-4">
+                    <!-- Surname or Company Name -->
+                    <label class="form-label" style="margin-top: 6%;">Company Name <span style="color:red">*</span> :</label>
+                </div>
+            
+                <div class="col-8">
+                    <input class="form-control mt-3" id="coyName" style="margin-left:-7px;" disabled />
+                </div>
+            </div>
       
-            <div class="w-100 bg-dark py-3">
+            <div class="w-100 bg-light py-3">
                 <div class="container-fluid">
                     <div class="row pt-2">
                         <div class="col-12">
-                            <p class="text-center text-light">
+                            <p class="text-center text-dark">
                                 Copyright &copy; 2023 Dress It Up
                                 | Designed by <a rel="sponsored" href="#" target="_blank">Orija Esther</a>
                             </p>
@@ -1215,8 +1590,23 @@
                     </div>
                 </div>
             </div>
-      
         </footer>
       </div>
+
+      <script>
+        const selectColor = document.getElementById('selectColor');
+        const colorBox = document.getElementById('colorBox');
+
+        selectColor.addEventListener('change', function() {
+            colorBox.style.backgroundColor = selectColor.value;
+        });
+
+        const Color = document.getElementById('Color');
+        const colorB = document.getElementById('colorB');
+
+        Color.addEventListener('change', function() {
+            colorB.style.backgroundColor = Color.value;
+        });
+    </script>
     </body>
     </html>

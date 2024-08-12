@@ -114,10 +114,24 @@ body{
     color: white;
     padding: 0px 10px;
 }
-#Bag, #user, #search{
+#shopping_bag, #user, #search{
     font-size: 20px;
     color: black;
     padding: 0px 15px;
+}
+
+#shopping_bag span{
+background-color: red;
+border-radius: 60px;
+font-size: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+position: absolute;
+top: 80px;
+left: 94.5%;
+padding: 1px 5px;
 }
 
 #Shop{
