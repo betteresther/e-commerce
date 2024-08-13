@@ -16,13 +16,13 @@ body{
     align-items: center;
     border: none;
     border-radius: 15px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 #catalogue{
-    font-size: 35px;
+    font-size: 25px;
     color: rgba(188, 109, 12, 0.742);
-    font-weight: 700;
+    font-weight: 500;
     margin-top: -35px;
 }
 
@@ -97,8 +97,8 @@ body{
     animation: animate 0.7s linear infinite;
 }
 #dress{
-    font-size: 40px;
-    font-weight: bolder;
+    font-size: 30px;
+    font-weight: bold;
     color: rgba(188, 109, 12, 0.742);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -261,7 +261,7 @@ h1, h2, {
   display: inline-block;
   overflow: hidden;
   margin: 2%;
-  width: 40%;
+  width: 42%;
   height: 400px;
   background: #3085a3;
   text-align: center;
