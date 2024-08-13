@@ -33,10 +33,10 @@ body{
 
     .container-fluid-one {
         margin: auto;
-        width:450px;
+        width:300px;
         border: 1px solid white;
         border-radius: 7px;
-        padding: 20px;
+        padding: 10px;
         color:white;
         font-size:16px;
         animation: myAnimation 2s ease 0s 1 normal forwards;
@@ -56,10 +56,10 @@ body{
 
       #container-fluid-two{
         margin: auto;
-        width:450px;
+        width:600px;
         border: 1px solid white;
         border-radius: 7px;
-        padding: 20px;
+        padding: 10px;
         color:white;
         font-size:16px;
         animation: myAnime 2s ease 0s 1 normal forwards;
