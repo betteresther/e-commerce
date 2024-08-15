@@ -17,6 +17,7 @@ body{
     border: none;
     border-radius: 15px;
     font-weight: 400;
+	padding: 8px;
 }
 
 #catalogue{
@@ -35,7 +36,7 @@ body{
     border-radius: 5px;
 }
 
-#shop_butt{
+#shop_button_skirt{
     font-size: 15px;
     color: black;
     background-color: transparent;
@@ -137,7 +138,7 @@ padding: 1px 5px;
 
 #Shop{
 font-size: 17px;
-color: white;
+color: black;
 padding: 0px 15px;
 font-family: 'Inter', sans-serif;
 }
@@ -153,15 +154,16 @@ font-family: 'Inter', sans-serif;
   } */
   #about{
     font-size: 17px;
-    color: white;
+    color: black;
     font-family: 'Inter', sans-serif;
     padding: 0px 15px;
 }
 #home{
     font-size: 17px;
-    color: white;
+    color: black;
     font-family: 'Inter', sans-serif;
     padding: 0px 15px;  
+	margin-left: 40px;
 }
 
 .footer_all{
